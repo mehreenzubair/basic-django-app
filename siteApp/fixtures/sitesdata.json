@@ -1,0 +1,68 @@
+[
+  {
+    "model": "siteApp.SiteDataEntry",
+    "pk": 1,
+    "fields": {
+     "description":"data entry 1 for Demo Site",
+     "A_value":12.00,
+     "B_value":16.00,
+     "date":"2015-02-01",
+     "site_id":1
+    }
+  },
+  {
+    "model": "siteApp.SiteDataEntry",
+    "pk": 2,
+    "fields": {
+     "description":"data entry 2 for Demo Site",
+     "A_value":20.00,
+     "B_value":100.00,
+     "date":"2015-02-03",
+     "site_id":1
+    }
+  },
+  {
+    "model": "siteApp.SiteDataEntry",
+    "pk": 3,
+    "fields": {
+     "description":"data entry 3 for Demo Site",
+     "A_value":20.00,
+     "B_value":80.00,
+     "date":"2015-02-10",
+     "site_id":1
+    }
+  },
+  {
+    "model": "siteApp.SiteDataEntry",
+    "pk": 4,
+    "fields": {
+     "description":"data entry 1 for ABC site",
+     "A_value":5.00,
+     "B_value":15.00,
+     "date":"2015-02-03",
+     "site_id":2
+    }
+  },
+  {
+    "model": "siteApp.SiteDataEntry",
+    "pk": 5,
+    "fields": {
+     "description":"data entry 2 for XYZ site",
+     "A_value":5.00,
+     "B_value":15.00,
+     "date":"2015-02-15",
+     "site_id":3
+    }
+  },
+  {
+    "model": "siteApp.SiteDataEntry",
+    "pk": 6,
+    "fields": {
+     "description":"data entry 1 for XYZ",
+     "A_value":5.00,
+     "B_value":15.00,
+     "date":"2015-02-28",
+     "site_id":3
+    }
+  }
+]

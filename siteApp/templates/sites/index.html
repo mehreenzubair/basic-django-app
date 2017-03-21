@@ -1,0 +1,28 @@
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/sites">Sites</a></li>
+      <li><a href="/sites/summary">Summary</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<h1>Sites</h1>
+
+{% if sites_list %}
+    <ul class="list-group">
+    {% for site in sites_list %}
+        <li class="list-group-item"><a href="/sites/{{ site.id }}/">{{ site.site_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No sites are available.</p>
+{% endif %}
+</div>

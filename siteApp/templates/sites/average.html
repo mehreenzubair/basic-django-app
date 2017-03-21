@@ -1,0 +1,41 @@
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/sites">Sites</a></li>
+      <li><a href="/sites/summary">Summary</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<h1>Summary</h1>
+
+<a href="/sites/summary"><button type="button" class="btn btn-primary active">Sum</button></a>
+<a href="#"><button type="button" class="btn btn-primary active">Average</button></a>
+
+<table class="table table-condensed">
+	<thead>
+		<tr>
+		<th>Site</th>
+		<th>A Value</th>
+		<th>B Value</th>
+		</tr>
+	</thead>
+	<tbody>	
+		{% for row in average_data %}
+			      <tr>
+			        <td>{{row.site_name}}</td>
+			        <td>{{row.A_value__avg |floatformat:2}}</td>
+			        <td>{{row.B_value__avg |floatformat:2}}</td>
+			      </tr>
+		{% endfor %}
+	</tbody>
+</table>
+</div>
+
+
+

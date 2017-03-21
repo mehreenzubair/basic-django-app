@@ -1,0 +1,36 @@
+{% load bootstrap3 %}
+
+{% bootstrap_css %}
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/sites">Sites</a></li>
+      <li><a href="/sites/summary">Summary</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+<h1> Site Details - {{site.site_name }} </h1>
+
+
+<table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>A Value</th>
+        <th>B Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in site.sitedataentry_set.all %}
+	      <tr>
+	        <td>{{data.date}}</td>
+	        <td>{{data.A_value |floatformat:2}}</td>
+	        <td>{{data.B_value |floatformat:2}}</td>
+	      </tr>
+      {% endfor %}
+    </tbody>
+</table>
+</div>

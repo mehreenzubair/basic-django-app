@@ -1,0 +1,23 @@
+[
+  {
+    "model": "siteApp.site",
+    "pk": 1,
+    "fields": {
+      "site_name": "Demo Site"
+    }
+  },
+  {
+    "model": "siteApp.site",
+    "pk": 2,
+    "fields": {
+      "site_name": "ABC Site"
+    }
+  },
+  {
+    "model": "siteApp.site",
+    "pk": 3,
+    "fields": {
+      "site_name": "XYZ Site"
+    }
+  }
+]
